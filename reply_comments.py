@@ -4,8 +4,7 @@ import os
 import random
 
 DATA_FILE = "comments_data.csv"
-GEMINI_API_KEYS = os.environ.get("GEMINI_API_KEYS", "").split(",")
-GEMINI_API_KEYS = [k.strip() for k in GEMINI_API_KEYS if k.strip()]
+GEMINI_API_KEYS = os.environ.get("GEMINI_API_KEYS")
 INSTAGRAM_ACCESS_TOKEN = os.environ.get("INSTAGRAM_ACCESS_TOKEN")
 INSTAGRAM_API_URL = "https://graph.facebook.com"
 
